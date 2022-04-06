@@ -1,33 +1,66 @@
 .favorites {
-    box-sizing: border-box;
-    border: 1px solid rgba(0, 8, 7);
-    padding: 30px 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 8, 7);
+  padding: 30px 20px;
 }
 
 .favorites__name {
-    box-sizing: border-box;
-    width: 100%;
-    font-size: 16px;
-    padding: 5px 10px;
-    border: 1px solid rgba(0, 8, 7, .5);
-    margin-bottom: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 8, 7, .5);
+  margin-bottom: 24px;
 }
 
 .favorites__list {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .favorites__save {
-    border: none;
-    background-color: #496DDB;
-    padding: 10px 15px;
-    color: #FFEEDB;
-    font-size: 14px;
-    transition: all 0.2s linear;
+  border: none;
+  background-color: #496DDB;
+  padding: 10px 15px;
+  color: #FFEEDB;
+  font-size: 14px;
+  transition: all 0.2s linear;
 }
 
 .favorites__save:hover {
-    cursor: pointer;
-    opacity: 0.9;
-    transition: all 0.2s linear;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: all 0.2s linear;
+}
+
+
+.favorites__delete {
+  position: absolute;
+  left: 280px;
+  top: -4px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+  background-color: rgb(255, 243, 243);
+}
+
+.favorites__item {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.favorites__link {
+  border: 1px solid #496DDB;
+  background-color: white;
+  padding: 10px 15px;
+  color: #FFEEDB;
+  font-size: 14px;
+}
+
+.favorites__disabled {
+  border: none;
+  background-color: gray;
+  padding: 10px 15px;
+  color: #FFEEDB;
+  font-size: 14px;
+  cursor: not-allowed;
 }
